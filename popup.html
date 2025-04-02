@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meeting Link Opener</title>
+    <style>
+      body {
+        width: 300px;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+      }
+      button {
+        width: 100%;
+        padding: 8px;
+        margin-top: 10px;
+        background-color: #4285f4;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #357abd;
+      }
+      #status {
+        margin-top: 10px;
+        padding: 8px;
+        border-radius: 4px;
+      }
+      .authorized {
+        background-color: #e6f4ea;
+        color: #137333;
+      }
+      .unauthorized {
+        background-color: #fce8e6;
+        color: #c5221f;
+      }
+      #meetingsList {
+        margin-top: 15px;
+        max-height: 300px;
+        overflow-y: auto;
+      }
+      .meeting-item {
+        padding: 12px;
+        border-bottom: 1px solid #eee;
+        margin-bottom: 8px;
+      }
+      .meeting-time {
+        font-weight: bold;
+        color: #4285f4;
+      }
+      .time-remaining {
+        color: #666;
+        font-size: 0.9em;
+        margin-top: 4px;
+      }
+      .meeting-title {
+        margin: 4px 0;
+      }
+      .meeting-link {
+        font-size: 0.8em;
+        color: #1a73e8;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Meeting Link Opener</h2>
+    <p>
+      This extension will automatically open your meeting links 10 minutes
+      before the scheduled time.
+    </p>
+
+    <div id="status">Checking connection status...</div>
+    <button id="authButton">Sign in with Google</button>
+    <div id="meetingsList"></div>
+    <button
+      id="debugOpenNext"
+      style="margin-top: 10px; background-color: #ea4335"
+    >
+      Debug: Open Next Meeting
+    </button>
+    <button
+      id="debugNotification"
+      style="margin-top: 10px; background-color: #34a853"
+    >
+      Debug: Test Notification
+    </button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
